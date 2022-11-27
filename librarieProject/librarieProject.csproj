@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1D4D1B9-2742-467F-800D-285D4658E01B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>librarieProject</RootNamespace>
+    <AssemblyName>librarieProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adaugareAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\adaugareAdmin.Designer.cs">
+      <DependentUpon>adaugareAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admintop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\admintop.Designer.cs">
+      <DependentUpon>admintop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\generateNavigatorAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\generateNavigatorAdmin.Designer.cs">
+      <DependentUpon>generateNavigatorAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autori\generateNavigatorAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autori\generateNavigatorAutor.Designer.cs">
+      <DependentUpon>generateNavigatorAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\generateNavigatorCarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\generateNavigatorCarti.Designer.cs">
+      <DependentUpon>generateNavigatorCarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\navigareCarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\navigareCarti.Designer.cs">
+      <DependentUpon>navigareCarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\navigareCartiGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\navigareCartiGenerator.Designer.cs">
+      <DependentUpon>navigareCartiGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compania\company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compania\company.Designer.cs">
+      <DependentUpon>company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="domenii\adaugareDomeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="domenii\adaugareDomeniu.Designer.cs">
+      <DependentUpon>adaugareDomeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="domenii\modificareDomeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="domenii\modificareDomeniu.Designer.cs">
+      <DependentUpon>modificareDomeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="domenii\selectareDomeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="domenii\selectareDomeniu.Designer.cs">
+      <DependentUpon>selectareDomeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="domenii\stergereDomeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="domenii\stergereDomeniu.Designer.cs">
+      <DependentUpon>stergereDomeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="navigationClass\theNavigationClass.cs" />
+    <Compile Include="plati\Plata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plati\Plata.Designer.cs">
+      <DependentUpon>Plata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="security\autorizare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security\autorizare.Designer.cs">
+      <DependentUpon>autorizare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autentificare\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autentificare\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autentificare\signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autentificare\signin.Designer.cs">
+      <DependentUpon>signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autentificare\signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autentificare\signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autori\selectareAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autori\selectareAutor.Designer.cs">
+      <DependentUpon>selectareAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autori\stergereAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autori\stergereAutor.Designer.cs">
+      <DependentUpon>stergereAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autori\adaugareAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autori\adaugareAutor.Designer.cs">
+      <DependentUpon>adaugareAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autori\modificareAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autori\modificareAutor.Designer.cs">
+      <DependentUpon>modificareAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\adaugareCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\adaugareCarte.Designer.cs">
+      <DependentUpon>adaugareCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\modificareCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\modificareCarte.Designer.cs">
+      <DependentUpon>modificareCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\selectareCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\selectareCarte.Designer.cs">
+      <DependentUpon>selectareCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carti\stergereCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carti\stergereCarte.Designer.cs">
+      <DependentUpon>stergereCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clienti\adaugareClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienti\adaugareClient.Designer.cs">
+      <DependentUpon>adaugareClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clienti\modificareClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienti\modificareClient.Designer.cs">
+      <DependentUpon>modificareClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clienti\selectareClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienti\selectareClient.Designer.cs">
+      <DependentUpon>selectareClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clienti\stergereClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienti\stergereClient.Designer.cs">
+      <DependentUpon>stergereClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\adaugareComentariu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\adaugareComentariu.Designer.cs">
+      <DependentUpon>adaugareComentariu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\modificareComentariu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\modificareComentariu.Designer.cs">
+      <DependentUpon>modificareComentariu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\selectareComentariu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\selectareComentariu.Designer.cs">
+      <DependentUpon>selectareComentariu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\stergereComentariu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\stergereComentariu.Designer.cs">
+      <DependentUpon>stergereComentariu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\bilant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\bilant.Designer.cs">
+      <DependentUpon>bilant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\costuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\costuri.Designer.cs">
+      <DependentUpon>costuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\personal.Designer.cs">
+      <DependentUpon>personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\pierderi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\pierderi.Designer.cs">
+      <DependentUpon>pierderi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\profit.Designer.cs">
+      <DependentUpon>profit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\stocuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\stocuri.Designer.cs">
+      <DependentUpon>stocuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contabilitate\venituri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contabilitate\venituri.Designer.cs">
+      <DependentUpon>venituri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="curier\curierat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="curier\curierat.Designer.cs">
+      <DependentUpon>curierat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\deconectareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB\deconectareForm.Designer.cs">
+      <DependentUpon>deconectareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="export\formaTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="export\formaTo.Designer.cs">
+      <DependentUpon>formaTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalitate\banca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiscalitate\banca.Designer.cs">
+      <DependentUpon>banca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalitate\caseria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiscalitate\caseria.Designer.cs">
+      <DependentUpon>caseria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalitate\impozite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiscalitate\impozite.Designer.cs">
+      <DependentUpon>impozite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalitate\taxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiscalitate\taxe.Designer.cs">
+      <DependentUpon>taxe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalitate\tva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiscalitate\tva.Designer.cs">
+      <DependentUpon>tva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\modificareAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\modificareAdmin.Designer.cs">
+      <DependentUpon>modificareAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search\cautareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search\cautareForm.Designer.cs">
+      <DependentUpon>cautareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\connectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB\connectionForm.Designer.cs">
+      <DependentUpon>connectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\lastProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\lastProducts.Designer.cs">
+      <DependentUpon>lastProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\productsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\productsList.Designer.cs">
+      <DependentUpon>productsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnizori\adaugareFurnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnizori\adaugareFurnizor.Designer.cs">
+      <DependentUpon>adaugareFurnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnizori\modificareFurnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnizori\modificareFurnizor.Designer.cs">
+      <DependentUpon>modificareFurnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnizori\selectareFurnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnizori\selectareFurnizor.Designer.cs">
+      <DependentUpon>selectareFurnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnizori\stergereFurnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="furnizori\stergereFurnizor.Designer.cs">
+      <DependentUpon>stergereFurnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ajutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\ajutor.Designer.cs">
+      <DependentUpon>ajutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="import\importFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="import\importFrom.Designer.cs">
+      <DependentUpon>importFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="legal\Copyright.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legal\Copyright.Designer.cs">
+      <DependentUpon>Copyright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicare\fb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicare\fb.Designer.cs">
+      <DependentUpon>fb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicare\socialeNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicare\socialeNetwork.Designer.cs">
+      <DependentUpon>socialeNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicare\toFlier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicare\toFlier.Designer.cs">
+      <DependentUpon>toFlier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicare\toPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicare\toPDF.Designer.cs">
+      <DependentUpon>toPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="publicare\toWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicare\toWeb.Designer.cs">
+      <DependentUpon>toWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\print.Designer.cs">
+      <DependentUpon>print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistici\autoriStatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistici\autoriStatistica.Designer.cs">
+      <DependentUpon>autoriStatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistici\cartiStatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistici\cartiStatistica.Designer.cs">
+      <DependentUpon>cartiStatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistici\comentariiStatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistici\comentariiStatistica.Designer.cs">
+      <DependentUpon>comentariiStatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistici\tranzactiiStatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistici\tranzactiiStatistica.Designer.cs">
+      <DependentUpon>tranzactiiStatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistici\vanzariStatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistici\vanzariStatistica.Designer.cs">
+      <DependentUpon>vanzariStatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\Comenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\Comenzi.Designer.cs">
+      <DependentUpon>Comenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\Opinii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\Opinii.Designer.cs">
+      <DependentUpon>Opinii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\prelucrareComenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\prelucrareComenzi.Designer.cs">
+      <DependentUpon>prelucrareComenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="security\sesiune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security\sesiune.Designer.cs">
+      <DependentUpon>sesiune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\casa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\casa.Designer.cs">
+      <DependentUpon>casa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\Cos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\Cos.Designer.cs">
+      <DependentUpon>Cos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reteleSociale\Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reteleSociale\Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\meniuLateralStanga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\meniuLateralStanga.Designer.cs">
+      <DependentUpon>meniuLateralStanga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comentarii\moderareComentariu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarii\moderareComentariu.Designer.cs">
+      <DependentUpon>moderareComentariu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formulare\topForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formulare\topForm.Designer.cs">
+      <DependentUpon>topForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tranzactii\Tranzactionare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tranzactii\Tranzactionare.Designer.cs">
+      <DependentUpon>Tranzactionare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="admin\selectareAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\selectareAdmin.Designer.cs">
+      <DependentUpon>selectareAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\stergereAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\stergereAdmin.Designer.cs">
+      <DependentUpon>stergereAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tranzactii\adaugareTranzactie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tranzactii\adaugareTranzactie.Designer.cs">
+      <DependentUpon>adaugareTranzactie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tranzactii\modificareTranzactie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tranzactii\modificareTranzactie.Designer.cs">
+      <DependentUpon>modificareTranzactie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tranzactii\selectareTranzactie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tranzactii\selectareTranzactie.Designer.cs">
+      <DependentUpon>selectareTranzactie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tranzactii\stergereTranzactie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tranzactii\stergereTranzactie.Designer.cs">
+      <DependentUpon>stergereTranzactie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\adaugareVanzare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\adaugareVanzare.Designer.cs">
+      <DependentUpon>adaugareVanzare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\modificareVanzare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\modificareVanzare.Designer.cs">
+      <DependentUpon>modificareVanzare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\selectareVanzare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\selectareVanzare.Designer.cs">
+      <DependentUpon>selectareVanzare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vanzari\stergereVanzare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vanzari\stergereVanzare.Designer.cs">
+      <DependentUpon>stergereVanzare.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin\adaugareAdmin.resx">
+      <DependentUpon>adaugareAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\generateNavigatorAdmin.resx">
+      <DependentUpon>generateNavigatorAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autori\adaugareAutor.resx">
+      <DependentUpon>adaugareAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autori\generateNavigatorAutor.resx">
+      <DependentUpon>generateNavigatorAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carti\adaugareCarte.resx">
+      <DependentUpon>adaugareCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carti\generateNavigatorCarti.resx">
+      <DependentUpon>generateNavigatorCarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carti\navigareCarti.resx">
+      <DependentUpon>navigareCarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carti\navigareCartiGenerator.resx">
+      <DependentUpon>navigareCartiGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="domenii\selectareDomeniu.resx">
+      <DependentUpon>selectareDomeniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formulare\index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="librarieDBF.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DashBoard\" />
+    <Folder Include="documente\" />
+    <Folder Include="magazin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
